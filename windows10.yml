@@ -3,12 +3,12 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "7e"
+      VERSION: "10"
       USERNAME: "Administrator"
       PASSWORD: "admin@123"
       RAM_SIZE: "4G"
-      CPU_CORES: "3"
-      DISK_SIZE: "14G"
+      CPU_CORES: "4"
+      DISK_SIZE: "500G"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -19,4 +19,5 @@ services:
       - "3389:3389/tcp"
       - "3389:3389/udp"
     stop_grace_period: 2m
+
 
