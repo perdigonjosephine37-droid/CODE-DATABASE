@@ -6,9 +6,9 @@ services:
       VERSION: "11"
       USERNAME: "Administrator"
       PASSWORD: "admin@123"
-      RAM_SIZE: "5G"
-      CPU_CORES: "5"
-      DISK_SIZE: "500G"
+      RAM_SIZE: "4G"
+      CPU_CORES: "4"
+      DISK_SIZE: "300G"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -19,6 +19,7 @@ services:
       - "3389:3389/tcp"
       - "3389:3389/udp"
     stop_grace_period: 2m
+
 
 
 
